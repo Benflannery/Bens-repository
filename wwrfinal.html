@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dry Oar Adventures</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Base Styles */
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        #content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #004d40;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            flex-wrap: wrap;
+        }
+
+        #logo {
+            width: 80px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        #hero-img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        #hero-msg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .home-title {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .button-box .book {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #ffcc00;
+            color: #004d40;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-box .book:hover {
+            background-color: #ffa500;
+        }
+
+        /* Main Grid */
+        .home-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            background-color: white;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto 1rem;
+        }
+
+        .icon {
+            width: 40px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Message Section */
+        .msg {
+            background-color: #e0f2f1;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        .msg h2 {
+            margin-bottom: 1rem;
+        }
+
+        .msg p {
+            max-width: 600px;
+            margin: 0 auto 1rem;
+        }
+
+        .join {
+            background-color: #004d40;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .join:hover {
+            background-color: #00695c;
+        }
+
+        /* Mountains Image */
+        .mountains {
+            width: 100%;
+            display: block;
+            margin: 2rem 0;
+            border-radius: 12px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer .social img {
+            width: 25px;
+            margin: 0 5px;
+            filter: brightness(0) invert(1);
+            transition: transform 0.3s ease;
+        }
+
+        footer .social img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img src="images/oars.png" alt="Logo" id="logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">Page 2</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
+            </div>
+            <section id="hero-msg">
+                <h1 class="home-title">Have An Adventure</h1>
+                <h4>Make Memories with Dry Oar</h4>
+                <div class="button-box">
+                    <a class="book" href="contactus.html">Book Now</a>
+                </div>
+            </section>
+        </div>
+
+        <main class="home-grid">
+            <section class="card rivers-card">
+                <img class="card-img" src="images/river.png" alt="River in forest">
+                <img class="icon" src="images/rivericon.png" alt="River icon">
+                <h2>Rivers</h2>
+            </section>
+
+            <section class="card camping-card">
+                <img class="card-img" src="images/tent.png" alt="Tent in mountains">
+                <img class="icon" src="images/fire.png" alt="Fire icon">
+                <h2>Camping</h2>
+            </section>
+
+            <section class="card rapids-card">
+                <img class="card-img" src="images/rafting.png" alt="Rafting boat">
+                <img class="icon" src="images/oars.png" alt="Oars icon">
+                <h2>Rapids</h2>
+            </section>
+
+            <img class="mountains" src="images/mountains.png" alt="Misty mountains">
+
+            <section class="msg">
+                <h2>More Than Just The Thrill</h2>
+                <p>Enjoy the breathtaking scenery—from valleys, meadows, and canyons to high peaks. It’s more than rapids; it’s a reset from the busy world.</p>
+                <a class="join" href="rivers.html">Join Us</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>Dry Oar &copy; 20XX - Ben Flannery</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"><img src="images/fb.png" alt="Facebook icon"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/R.png" alt="Twitter icon"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/insta.png" alt="Instagram icon"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
